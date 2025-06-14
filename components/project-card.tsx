@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Card, CardContent } from "@/components/ui/card"
@@ -15,6 +16,14 @@ export function ProjectCard({ image, title, category, slug, className }: Project
   return (
     <Link href={`/portfolio/${slug}`}>
       <Card className={cn("overflow-hidden group cursor-pointer", className)}>
+        <div className="relative aspect-[4/3] overflow-hidden">
+          <Image
+            src={image || "/images/flyers/welfare-director-election.png"}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
         <CardContent className="p-4">
           <Badge variant="outline" className="mb-2">
             {category}

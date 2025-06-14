@@ -232,9 +232,9 @@ const projectsData = {
     client: "Ogunsola Oluwafisayo Omotola",
     date: "March 2023",
     description:
-      "A vibrant election campaign flyer for a student running for Social Director position at Redeemer's University Economics Students' Association. The design needed to convey energy, creativity, and social engagement to appeal to economics students.",
+      "A vibrant election campaign flyer for a student running for Social Director position at Redeemer's University Economics Students' Association. The design needed to convey energy, creativity, and social engagement to appeal to the student body.",
     approach:
-      "I created a dynamic design with bold geometric shapes and a vibrant orange, green, and blue color palette that reflects energy and creativity. The large 'VOTE' typography commands attention, while the geometric background elements suggest movement and social connection. The tagline 'Bridging hearts through Events' perfectly captures the candidate's vision for the role. The professional portrait is framed by the design elements to create visual hierarchy.",
+      "I created a dynamic, geometric design with bold orange, green, and blue color blocking that reflects energy and creativity. The large 'VOTE' typography commands attention while the geometric shapes create visual interest and movement. The tagline 'Bridging hearts through Events' perfectly captures the social director role, and the professional portrait establishes credibility and approachability.",
     images: [
       {
         src: "/images/flyers/social-director-election.png",
