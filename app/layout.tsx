@@ -1,6 +1,5 @@
 import type React from "react"
 import { Mona_Sans as FontSans } from "next/font/google"
-import localFont from "next/font/local"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SiteHeader } from "@/components/site-header"
@@ -12,17 +11,12 @@ const fontSans = FontSans({
   variable: "--font-sans",
 })
 
-const fontHeading = localFont({
-  src: "../assets/fonts/CalSans-SemiBold.woff2",
-  variable: "--font-heading",
-})
-
 export const metadata = {
   title: "Kingscribe - Professional Graphic Design by Daniel Alli",
   description:
     "Captivating flyer designs and promotional materials that get attention. Professional graphic design services by Daniel Alli.",
   keywords: ["flyer design", "graphic designer", "promotional materials", "Daniel Alli", "Kingscribe"],
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -32,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable, fontHeading.variable)}>
+      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
